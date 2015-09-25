@@ -1,0 +1,1478 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    height: 3px;
+    border: 0;
+    box-shadow: 1px 1px 1px 1px #181818 inset;
+    background-color: black;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Inicio dos styles
+   ========================================================================== */
+@font-face {
+	font-family: oswald;
+	src: url(../fonts/Oswald-Bold.ttf);
+	font-weight: bold;
+}
+
+html, body { height: 100%; }
+
+body {
+	background: #fff;
+	background: url(../images/faixa.png) no-repeat center;	
+	background-position: right 850px;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	font-family: oswald, 'Tahoma';
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active{
+	text-decoration: none;
+	color: #f05c1e;
+}
+
+#content {
+	width: 100%;
+	height: auto;
+}
+
+#base-login {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+#base {
+	width: 1100px;
+	margin: 0 auto;
+	overflow: auto;
+	padding-bottom: 111px;
+}
+
+#base, #base-login, #header {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#header {
+	margin-top: 20px;	
+}
+
+#faixa {
+	width: 100%;
+	height: auto;
+}
+
+#container-login {
+	background: #fff;
+	width: 600px;
+	height: 351px;
+	margin: 0 auto;
+	margin-top: 100px;
+	border-radius: 20px;
+}
+
+#container-login ul {
+	width: 100%;
+	padding-top: 20px;
+	margin-left: -20px;
+	display: table;
+}
+
+#container-login ul > li {
+	display: inline-block;
+	text-align: center;
+	width: 49%;
+}
+
+#container-login .esquerda {
+	float: left;
+	width: 526px;
+	height: 197px;
+	background: url(../images/registrado.jpg) no-repeat;
+	margin-top: 30px;
+	margin-left: 23px;
+}
+
+#container-login .esquerda .registro_esquerda {
+	float: left;
+	width: 200px;
+	margin-top: 90px;
+	margin-left: 10px;
+}
+#container-login .esquerda .registro_esquerda input[type='text'],
+#container-login .esquerda .registro_esquerda input[type='password']{
+	background-color: #efefef;
+	color: #a7a7a7;
+	width: 248px;
+	height: 43px;
+	border: 0;
+	padding: 0 10px;
+	margin-bottom: 5px;
+}
+#container-login .esquerda .registro_esquerda input[name='Login']{
+	background: url(../images/ico-user.png) no-repeat scroll 7px 10px #efefef;
+	padding-left: 5px;
+	text-align: center;
+}
+#container-login .esquerda .registro_esquerda input[name='Senha']{
+	background: url(../images/ico-password.png) no-repeat scroll 7px 15px #efefef;
+	padding-left: 5px;
+	text-align: center;
+}
+
+#container-login .button{
+	font-size: 21pt !important;
+	text-transform: uppercase;
+	background: #f05c1e;
+	color: #fff;
+}
+
+#container-login .esquerda .registro_direita {
+	float: right;
+  	margin: 90px 10px 20px 0;
+}
+
+#container-login .direita {
+	float: left;
+	width: 526px;
+	height: 197px;
+	background: url(../images/nao-registrado.jpg) no-repeat;
+	margin-top: 30px;
+	margin-left: 25px;
+}
+
+.registro {
+	height: 200px;
+	margin-top: 210px;
+	text-align: center;
+}
+
+.registro label {
+	font-size: 44px;
+	font-weight: bold;
+	color: #f05c1e;
+}
+
+.registro .button {
+	font-size: 31pt !important;
+	text-transform: uppercase;
+	background: #f05c1e;
+	color: #fff;
+	border-radius: 10px;
+}
+
+#rodape {
+	background-color: #fff;
+	height: 100px;
+	clear: both;
+	text-align: left;
+}
+
+#rodape img {
+	text-align: left;
+	margin: 10px 40px 0 0;
+}
+
+.Entrar {
+  width: 200px;
+  height: 91px;
+	background-color: #000;
+	color: #ce6604;
+	border: 6px #ce6604 solid;
+}
+
+.Registrar {
+	width: 350px;
+	height: 60px;
+	background-color: #000;
+	color: #ce6604;
+	border: 6px #ce6604 solid;
+  font-size: 20pt;
+}
+
+.container_home{
+  max-width: 1124px;
+  background-color:  #181818;
+  box-sizing: border-box;
+  padding: 30px;
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(243, 116, 9, 1);
+  -moz-box-shadow:    5px 5px 0px 0px rgba(243, 116, 9, 1);
+  box-shadow:         5px 5px 0px 0px rgba(243, 116, 9, 1);
+  overflow: auto;
+  zoom: 1;
+}
+
+.container_home .title{
+  text-transform: uppercase;
+  color: white;
+  height: 75px;
+  line-height: 75px;
+  padding-left: 10px;
+  margin-left: 20px;
+  background-color: #2c2c2c;
+  box-sizing: border-box;
+  -webkit-box-shadow: 1px 1px 0px 0px rgba(243, 116, 9, 1);
+  -moz-box-shadow:    1px 1px 0px 0px rgba(243, 116, 9, 1);
+  box-shadow:         1px 1px 0px 0px rgba(243, 116, 9, 1);
+}
+
+.container_home .form{
+  width: 650px;
+  max-width: 650px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.container_home h3{
+  color: white;
+}
+.container_home img{
+  margin: 0 10px;
+}
+
+.container {
+  max-width: 1124px;
+  background-color:  #181818;
+  box-sizing: border-box;
+  padding: 30px;
+  -webkit-box-shadow: 5px 5px 0px 0px rgba(243, 116, 9, 1);
+  -moz-box-shadow:    5px 5px 0px 0px rgba(243, 116, 9, 1);
+  box-shadow:         5px 5px 0px 0px rgba(243, 116, 9, 1);
+  overflow: auto;
+  zoom: 1;
+}
+
+.container .title{
+  text-transform: uppercase;
+  color: white;
+  height: 75px;
+  line-height: 75px;
+  padding-left: 10px;
+  background-color: #2c2c2c;
+  box-sizing: border-box;
+  -webkit-box-shadow: 1px 1px 0px 0px rgba(243, 116, 9, 1);
+  -moz-box-shadow:    1px 1px 0px 0px rgba(243, 116, 9, 1);
+  box-shadow:         1px 1px 0px 0px rgba(243, 116, 9, 1);
+}
+
+.container .form{
+  width: 650px;
+  max-width: 650px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.container h3{
+  color: white;
+}
+
+.container img{
+  margin: 0 10px;
+}
+
+.toolbox{
+  background-color:  black;
+  width: 100%;
+  height: 97px;
+}
+.toolbox > ul{
+  width: 1124px;
+  margin: 0 auto;
+}
+.toolbox > ul > li{
+  background-color: transparent !important;
+  min-width: 80px !important;
+  margin: 10px 0 0 0 !important;
+}
+.toolbox > ul > li:not(:last-child){
+  border-right: 1px #ce6604 solid;
+}
+
+/* ==========================================================================
+   Cadastro
+   ========================================================================== */
+.form{
+  color: #ce6604;
+  font-weight: 200;
+}
+.form input:not(.not-resize),
+.form textarea{
+  width: 100%;
+  background-color:  #2c2c2c;
+  color:  white;
+  border: 0;
+  padding: 10px;
+}
+.form > .aceite{
+  width: 80%;
+  margin: 30px auto;
+  background-color: #ce6604;
+  color: black;
+  padding: 20px;
+  color:  #181818;
+  font-size: 26.17px;/* Approximation due to font substitution */
+  font-weight: 700;
+  line-height: 44.165px;/* Approximation due to font substitution */
+  text-align: center;
+}
+
+.bt_cadastro{
+  width: 40%;
+  border: 1px transparent;
+  margin: 0 auto;
+  background-color: #ce6604;
+  color: black;
+  padding: 20px;
+  color:  #181818;
+  font-size: 26.17px;/* Approximation due to font substitution */
+  font-weight: 700;
+  line-height: 44.165px;/* Approximation due to font substitution */
+  text-align: center;
+}
+
+.form textarea{
+  font-family: Tahoma;
+  font-size: 16.84px;
+  font-weight: 400;
+  text-align: justify;
+  transform: scaleY(1.0095);
+  border: 0;
+  background-color:  transparent;
+
+}
+.form > small{
+  color: white;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+}
+.form hr{
+  height: 3px;
+  border: 0;
+  box-shadow: 1px 1px 1px 1px #181818 inset;
+  background-color: black;
+}
+
+.regulamento{
+  color:  white;
+  font-size: 16.85px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.regulamento p{
+  font-family: Tahoma;
+}
+.regulamento  #container{
+  position: relative;
+  z-index: 1;
+}
+ul{ list-style:none }
+
+#content > nav{
+  width: 100%;
+  font-weight: bold
+}
+#content  nav  ul{
+  width: 910px;
+  padding-left: 0px;
+  margin: -11px auto;
+}
+
+#content:not(.login) nav ul > li,
+#content .toolbox ul > li
+{
+  display: inline-block;
+  font-family: oswald;
+  margin: 0;
+  padding: 0;
+  color: white;
+  min-width: 156px;
+  height: 56px;
+  line-height: 56px;
+  background-color: #ce6604;
+  text-align: center;
+  margin: 11px;
+}
+
+#content .title{
+  font-family: oswald;
+}
+/* ==========================================================================
+   Home
+   ========================================================================== */
+.home{
+  color: white;
+  font-family: Tahoma;
+}
+.home .title{
+  width:360px;
+  box-sizing: border-box;
+  -webkit-box-shadow: 4px 4px 0px 0px rgba(243, 116, 9, 1);
+  -moz-box-shadow:    4px 4px 0px 0px rgba(243, 116, 9, 1);
+  box-shadow:         4px 4px 0px 0px rgba(243, 116, 9, 1);
+}
+.desempenho {
+	margin-left: 30px;
+}
+.two-columns div[class^='pull']{
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 48%;
+}
+.two-columns div[class^='pull']:last-child{
+  border-left: 1px solid #101010;
+  padding-left: 10px;
+  margin-left: 10px;
+
+}
+.home div[class^='pull'] img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.home textarea{
+	background-color: #181818;
+	border: 0;
+	width: 100%;
+	padding: 10px;
+	text-align: justify;
+	white-space: normal;
+	overflow-y: scroll;
+	height: 500px;
+	scrollbar-arrow-color: #000;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+
+ul.ranking{
+  display: list-item;
+  width: 100%;
+  margin: 20px auto;
+  padding: 0;
+  text-align: center;
+}
+ul.ranking li{
+  display: list-item;
+  height: 56px;
+  line-height: 56px;
+  background-color: #2c2c2c;
+  width: 90%;
+  margin:0 auto;
+}
+ul.ranking li:first-child,
+ul.ranking li:last-child
+{
+  height: 20px;
+  line-height: 10px;
+}
+ul.ranking > li.me{
+  height: 61px;
+  background: #ce6604;
+  box-shadow: 0px 0px 35px 0px rgba(0, 0, 0, 0.75);
+  width: 100%;
+}
+ul.ranking > li.me a:link,
+ul.ranking > li.me a:hover,
+ul.ranking > li.me a:visited,
+ul.ranking > li.me a:active{
+  color: #181818;
+  font-size: 18pt;
+}
+.form.lancamentos {
+	border: 0;
+}
+
+.container .form.lancamentos{
+  width: 1050px;
+  max-width: 1050px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.form.lancamentos button,
+.form.contato,
+.form.cadastro button,{
+  background-color:  #ce6604;
+  color:  #181818;
+  font-size: 34px;/* Approximation due to font substitution */
+  font-weight: 700;
+  text-align: center;
+  padding: 0 40px;
+  height: 80px;
+  margin: 30px auto 10px;
+  display: block;
+  border: 0;
+}
+#talkbubble {
+   background: #ec7a0f;
+   color: #181818;
+   padding: 10px;
+   position: relative;
+
+}
+#talkbubble:before {
+  content: "";
+  position: absolute;
+  color: transparent;
+  right: 100%;
+  top: 4px;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 22px solid #ec7a0f;
+  border-bottom: 10px solid
+}
+
+.contato select,
+.contato textarea
+{
+  width: 100%;
+  background-color: #2c2c2c;
+  border:1px #202020 solid;
+}
+.premiacao{
+  color: white;
+  font-family: Tahoma;
+  font-size: 17px;
+}
+.premiacao #imgs{
+  text-align: center
+}
+.premiacao #imgs > img{
+  margin:10px 30px;
+}
+
+.mural{
+
+}
+.mural button{
+  border-style: solid;
+  border-width: 8px;
+  border-color:  #ce6604;
+  box-sizing: border-box;
+  background-color:  #ce6604;
+  width: 129px;
+  height: 53px;
+}
+.mural button.more{
+  display: block;
+  margin: 0 auto;
+}
+.mural .wall{
+  height: 360px;
+  overflow-y: auto;
+  margin-top: 100px;
+  color: white;
+}
+.mural .warn > p{
+  position: relative;
+  background-color: #ce6604;
+  border: 1px solid #ce6604;
+  border-radius: 1px;
+  margin: 20px;
+  padding:10px;
+}
+.mural .warn > p:before{
+  content: "";
+  position: absolute;
+  color: transparent;
+  right: 100%;
+  bottom: -1px;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 23px solid #ce6604;
+  border-bottom: 0px solid;
+}
+.mural .wall.not(.warn) p{
+    font-family: tahoma;
+}
+.mural .wall h3{
+  color:  #f37409;
+  font-size: 18px;
+}
+.mural .talkbubble{
+  position: relative;
+
+  border-radius: 1px;
+  border: 1px solid #ce6604;
+  background: transparent;
+  margin: 20px;
+}
+.mural .talkbubble:before {
+  content: "";
+  background: url(../images/bg-textarea.gif);
+  position: absolute;
+  right: 100%;
+  top: -1px;
+  width: 23px;
+  height:22px;
+}
+.mural .talkbubble textarea{
+  position: inherit;
+  width: inherit;
+  height: inherit;
+  background: inherit;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  color: #ce6604;
+  border: none;
+  resize: none;
+  outline:none;
+  font-size: 32px;
+  font-weight: lighter;
+}
+.mural .talkbubble textarea::-webkit-input-placeholder {
+  color: #ce6604;
+}
+
+.mural .talkbubble textarea:-moz-placeholder {
+   color: #ce6604;
+}
+
+.mural .talkbubble textarea::-moz-placeholder {
+   color: #ce6604;
+}
+
+.mural .talkbubble textarea:-ms-input-placeholder {
+   color: #ce6604;
+}
+.mural .pull-right{
+  float: right;
+}
+
+.faq p{
+  color: white;
+  font-family: tahoma
+}
+.faq .wall{
+  margin: 50px 0;
+}
+.historico{
+  color: white;
+}
+.historico table{
+  margin: 20px 0;
+  width: 100%;
+  text-align: center;
+
+}
+.historico table thead tr th{
+  height: 30px;
+  background-color: #ce6604;
+  font-weight: bold;
+}
+.historico table tbody tr td{
+  font-family: Tahoma;
+  padding:10px 0;
+  border: 2.5px #2c2c2c solid;
+}
+.historico select{
+  background-color: #181818;
+  color: white;
+  border: 0;
+}
+.button{
+  background-color:  #ce6604;
+  color:  #181818;
+  font-size: 34px;/* Approximation due to font substitution */
+  font-weight: 700;
+  text-align: center;
+  padding: 0 40px;
+  height: 80px;
+  margin: 30px auto 10px;
+  display:block;
+  border: 0;
+}
+.button > a{
+  color: #181818;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.container-graph table{
+  color:  #ce6604;
+  font-size: 20px;
+  font-weight: 200;
+  margin:20px
+}
+.container-graph table tr>td:first-child > div{
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
+
+.container-graph table .orange > div {
+  background: rgb(255,124,0);
+}
+
+.container-graph table .salmon > div {
+  background: rgb(255,227,177);
+}
+
+.container-graph table .darkOrange > div {
+  background: rgb(255,78,0);
+}
+.graph {
+  position: relative;
+  z-index: 0;
+  color: white;
+}
+
+/*-----------------------------*/
+/*Graph Code*/
+.scale-graph {
+  position: relative;
+  display: block;
+  height: 400px;
+  width: 100%;
+  padding: 20px 20px 50px 40px;
+}
+
+.scale-markers {
+  position: absolute;
+  text-indent: -15px;
+  top: 20px;
+  bottom: 10px;
+  right: 20px;
+  left: 40px;
+  text-align: left;
+}
+
+.scale-marker {
+  position: relative;
+  vertical-align: top;
+  display: block;
+  height: 7%;
+  width: 100%;
+  float: left;
+  border-bottom: 1px solid white;
+}
+
+.scale-value {
+  text-align: right;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  left: -25px;
+  bottom: -10px;
+}
+
+.scale-bars {
+  text-align: center;
+  display: block;
+  height: 100%;
+}
+
+.scale-wrap {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 5%;
+}
+
+.scale-bar {
+  position: absolute;
+  left: 7%;
+  right: 7%;
+  bottom: 0;
+  height: 0;
+  -moz-transition: height 2s;
+  -o-transition: height 2s;
+  -webkit-transition: height 2s;
+  transition: height 2s;
+}
+
+.scale-bar.orange{
+  background: rgba(255,124,0, 0.9);
+}
+.scale-bar.salmon{
+  background: rgba(255,227,177, 0.9);
+}
+.scale-bar.darkOrange{
+  background: rgba(255,78,0, 0.9);
+}
+.scale-bar.orange:hover{
+  background: rgba(255,124,0, 1);
+}
+.scale-bar.salmon:hover{
+  background: rgba(255,227,177, 1);
+}
+.scale-bar.darkOrange:hover{
+  background: rgba(255,78,0, 1);
+}
+
+.scale-number {
+  position: absolute;
+  line-height: 50px;
+  bottom: -50px;
+  width: 100%;
+  left: 50%;
+  margin-left: -50%;
+  text-align: center;
+  /*outline: 1px solid red;*/
+}
+
+/*Bar Height class generator*/
+.scale-1 {
+  height: 1%;
+}
+
+.scale-2 {
+  height: 2%;
+}
+
+.scale-3 {
+  height: 3%;
+}
+
+.scale-4 {
+  height: 4%;
+}
+
+.scale-5 {
+  height: 5%;
+}
+
+.scale-6 {
+  height: 6%;
+}
+
+.scale-7 {
+  height: 7%;
+}
+
+.scale-8 {
+  height: 8%;
+}
+
+.scale-9 {
+  height: 9%;
+}
+
+.scale-10 {
+  height: 10%;
+}
+
+.scale-11 {
+  height: 11%;
+}
+
+.scale-12 {
+  height: 12%;
+}
+
+.scale-13 {
+  height: 13%;
+}
+
+.scale-14 {
+  height: 14%;
+}
+
+.scale-15 {
+  height: 15%;
+}
+
+.scale-16 {
+  height: 16%;
+}
+
+.scale-17 {
+  height: 17%;
+}
+
+.scale-18 {
+  height: 18%;
+}
+
+.scale-19 {
+  height: 19%;
+}
+
+.scale-20 {
+  height: 20%;
+}
+
+.scale-21 {
+  height: 21%;
+}
+
+.scale-22 {
+  height: 22%;
+}
+
+.scale-23 {
+  height: 23%;
+}
+
+.scale-24 {
+  height: 24%;
+}
+
+.scale-25 {
+  height: 25%;
+}
+
+.scale-26 {
+  height: 26%;
+}
+
+.scale-27 {
+  height: 27%;
+}
+
+.scale-28 {
+  height: 28%;
+}
+
+.scale-29 {
+  height: 29%;
+}
+
+.scale-30 {
+  height: 30%;
+}
+
+.scale-31 {
+  height: 31%;
+}
+
+.scale-32 {
+  height: 32%;
+}
+
+.scale-33 {
+  height: 33%;
+}
+
+.scale-34 {
+  height: 34%;
+}
+
+.scale-35 {
+  height: 35%;
+}
+
+.scale-36 {
+  height: 36%;
+}
+
+.scale-37 {
+  height: 37%;
+}
+
+.scale-38 {
+  height: 38%;
+}
+
+.scale-39 {
+  height: 39%;
+}
+
+.scale-40 {
+  height: 40%;
+}
+
+.scale-41 {
+  height: 41%;
+}
+
+.scale-42 {
+  height: 42%;
+}
+
+.scale-43 {
+  height: 43%;
+}
+
+.scale-44 {
+  height: 44%;
+}
+
+.scale-45 {
+  height: 45%;
+}
+
+.scale-46 {
+  height: 46%;
+}
+
+.scale-47 {
+  height: 47%;
+}
+
+.scale-48 {
+  height: 48%;
+}
+
+.scale-49 {
+  height: 49%;
+}
+
+.scale-50 {
+  height: 50%;
+}
+
+.scale-51 {
+  height: 51%;
+}
+
+.scale-52 {
+  height: 52%;
+}
+
+.scale-53 {
+  height: 53%;
+}
+
+.scale-54 {
+  height: 54%;
+}
+
+.scale-55 {
+  height: 55%;
+}
+
+.scale-56 {
+  height: 56%;
+}
+
+.scale-57 {
+  height: 57%;
+}
+
+.scale-58 {
+  height: 58%;
+}
+
+.scale-59 {
+  height: 59%;
+}
+
+.scale-60 {
+  height: 60%;
+}
+
+.scale-61 {
+  height: 61%;
+}
+
+.scale-62 {
+  height: 62%;
+}
+
+.scale-63 {
+  height: 63%;
+}
+
+.scale-64 {
+  height: 64%;
+}
+
+.scale-65 {
+  height: 65%;
+}
+
+.scale-66 {
+  height: 66%;
+}
+
+.scale-67 {
+  height: 67%;
+}
+
+.scale-68 {
+  height: 68%;
+}
+
+.scale-69 {
+  height: 69%;
+}
+
+.scale-70 {
+  height: 70%;
+}
+
+.scale-71 {
+  height: 71%;
+}
+
+.scale-72 {
+  height: 72%;
+}
+
+.scale-73 {
+  height: 73%;LANÇAMENTO SERÁ ENTREGUE AOS SEUS CUIDADOS NA CONCESSIONÁRIA
+
+
+  height: 74%;
+}
+
+.scale-75 {
+  height: 75%;
+}
+
+.scale-76 {
+  height: 76%;
+}
+
+.scale-77 {
+  height: 77%;
+}
+
+.scale-78 {
+  height: 78%;
+}
+
+.scale-79 {
+  height: 79%;
+}
+
+.scale-80 {
+  height: 80%;
+}
+
+.scale-81 {
+  height: 81%;
+}
+
+.scale-82 {
+  height: 82%;
+}
+
+.scale-83 {
+  height: 83%;
+}
+
+.scale-84 {
+  height: 84%;
+}
+
+.scale-85 {
+  height: 85%;
+}
+
+.scale-86 {
+  height: 86%;
+}
+
+.scale-87 {
+  height: 87%;
+}
+
+.scale-88 {
+  height: 88%;
+}
+
+.scale-89 {
+  height: 89%;
+}
+
+.scale-90 {
+  height: 90%;
+}
+
+.scale-91 {
+  height: 91%;
+}
+
+.scale-92 {
+  height: 92%;
+}
+
+.scale-93 {
+  height: 93%;
+}
+
+.scale-94 {
+  height: 94%;
+}
+
+.scale-95 {
+  height: 95%;
+}
+
+.scale-96 {
+  height: 96%;
+}
+
+.scale-97 {
+  height: 97%;
+}
+
+.scale-98 {
+  height: 98%;
+}
+
+.scale-99 {
+  height: 99%;
+}
+
+.scale-100 {
+  height: 100%;
+}
