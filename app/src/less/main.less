@@ -1,0 +1,79 @@
+@import "normalize.less";
+@import "variables.less";
+@import "mixins.less";
+@import "fonts.less";
+
+body{
+  background-color: @cyan;
+  padding-top:30px;
+
+  h1, h2, h3{
+    color: @orange;
+    text-transform: uppercase;
+  }
+  a{
+    text-decoration: none;
+  }
+}
+
+header{
+  overflow: auto;
+  height:376px;
+  background: url(../images/header.jpg) no-repeat;
+  .background-cover();
+  font-family: oswald;
+  font-weight: bold;
+
+  #logo{
+    float:left
+  }
+
+  nav{
+    float:right;
+    clear: both;
+    ul{
+      li{
+        a{
+          &:link,
+          &:hover,
+          &:visited,
+          &:active{
+            color: @orange;
+          }
+        }
+      }
+    }
+    &:first-child{
+      ul > li{
+        display: inline-block;
+      }
+    }
+    &:last-child{
+      text-transform: uppercase;
+      font-size: 1.1vw;
+
+      ul{
+        margin-top: 70px;
+        li{
+          display: inline-block;
+          &::before{
+            content: '';
+            background: url(../images/pin.png) 0 15px no-repeat;
+            padding: 45px 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+#content{
+
+}
+
+footer{
+  img{
+    width: 100%;
+    display: block;
+  }
+}
