@@ -3,12 +3,24 @@
 @import "mixins.less";
 @import "fonts.less";
 
+*{
+  -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+.img-responsive{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body{
   background-color: @cyan;
   padding-top:30px;
 
   h1, h2, h3{
     color: @orange;
+    font-family: oswald;
     text-transform: uppercase;
   }
   a{
@@ -55,6 +67,7 @@ header{
       ul{
         margin-top: 70px;
         li{
+          margin-right: 30px;
           display: inline-block;
           &::before{
             content: '';
@@ -67,8 +80,31 @@ header{
   }
 }
 
-#content{
+.content{
+  padding: 10px 40px;
+  position: relative;
+  &#home{
 
+    &>div{
+      overflow: auto;
+      display: inline-block;
+      width: 49%;
+      #img-home{
+        margin: 0 auto;
+        display: block;
+        border:4px @orange solid;
+      }
+    }
+    &>div:last-child{
+      position: absolute;
+      padding: 0 30px;
+      h1{
+        padding: 20px;
+        background-color: @orange;
+        color: white;
+      }
+    }
+  }
 }
 
 footer{
