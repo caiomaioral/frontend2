@@ -83,6 +83,13 @@ header{
 .content{
   padding: 10px 40px;
   position: relative;
+
+  .img-90{
+    width: 90% !important;
+    .border-on-image
+  }
+
+
   &#home{
 
     &>div{
@@ -90,9 +97,7 @@ header{
       display: inline-block;
       width: 49%;
       #img-home{
-        margin: 0 auto;
-        display: block;
-        border:4px @orange solid;
+        .border-on-image
       }
     }
     &>div:last-child{
