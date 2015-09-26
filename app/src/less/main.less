@@ -14,6 +14,17 @@
   height: auto;
 }
 
+.row{
+  width: 100%;
+  padding: 20px;
+  display: table;
+  .col{
+    display: table-cell;
+    vertical-align: top;
+    width: 49%;
+  }
+}
+
 body{
   background-color: @cyan;
   padding-top:30px;
@@ -156,7 +167,6 @@ header{
           line-height: 30px
         }
       }
-
     }
   }
 
@@ -187,6 +197,47 @@ header{
         display: block;
         margin: 20px auto;
         padding: 10px 20px;
+      }
+    }
+
+    &#awards{
+      table + table { margin-top: 50px;}
+      table{
+        margin: 0 auto;
+        background-color: white;
+        min-width: 500px;
+
+        thead{
+          color: white;
+        }
+        thead > tr > th,
+        tbody > tr > td{
+          padding: 5px;
+        }
+
+
+        &.orange{
+          border: 1px @orange solid;
+          border-collapse: collapse;
+          thead{
+            background-color: @orange;
+            th + th { border-left:1px solid white; }
+          }
+          tbody > tr > td{
+            border: 1px @orange solid
+          }
+        }
+        &.blue{
+          border: 1px @blue solid;
+          border-collapse: collapse;
+          thead{
+            background-color: @blue;
+            th + th { border-left:1px solid white; }
+          }
+          tbody > tr > td{
+            border: 1px @blue solid
+          }
+        }
       }
     }
 }
