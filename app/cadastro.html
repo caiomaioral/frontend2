@@ -25,7 +25,7 @@
             <li><a href="#"><img src="images/btn-detalhes.png" alt="Meus Detalhes"></a></li>
             <li><a href="#"><img src="images/btn-regulamento.png" alt="Regulamento"></a></li>
             <li><a href="#"><img src="images/btn-faq.png" alt="FAQ"></a></li>
-            <li  class="active"><a href="#"><img src="images/btn-contato.png" alt="Contato"></a></li>
+            <li><a href="#"><img src="images/btn-contato.png" alt="Contato"></a></li>
             <li><a href="#"><img src="images/btn-sair.png" alt="Sair"></a></li>
           </ul>
         </nav>
@@ -40,27 +40,39 @@
         </nav>
       </header>
 
-      <div class="content" id="contact" >
-        <h1><img src="images/pin.png">Contato</h1>
-        <hr>
+      <div class="content" id="joinUs">
+        <div class="form-split">
+          <h1>cadastre seu bilhete</h1>
+          <div>
+            <form action="" method="post">
+              <label for="eticket">Eticket Airfrance / KLM</label>
+              <input type="text" name="eticket" id="eticket" placeholder="e.g. 0741234567890">
 
-        <div>
-          <form action="#">
-            <label for="subject">Assunto</label>
-            <select name="subject" id="subject">
-              <option value="reclamacao">Reclamação</option>
-              <option value="Elogio">Elogio</option>
-              <option value="Outros">Outros</option>
-            </select>
-            <label for="message">Mensagem</label>
-            <textarea name="message" rows="8" cols="40" id="message"></textarea>
-            <button type="submit">ENVIAR</button>
-          </form>
+              <label for="code">Ou <br> Código de Reserva GOL</label>
+              <input type="text" name="code" id="code" placeholder="e.g. 0741234567890">
+
+              <label for="class">Classe Viagem Internacional</label>
+              <select>
+                <option value="#">Option 1</option>
+              </select>
+
+              <label for="origin">Origem do voo</label>
+              <input type="text" name="origin" id="origin">
+
+              <label for="origin">Data emissão</label>
+              <input type="text" name="date" id="date">
+              <small>Só serão válidos bilhetes até o dia xx/xx/xxxx</small>
+
+              <button type="submit">Cadastrar</button>
+            </form>
+          </div>
         </div>
 
       </div>
+
+
       <footer>
-        <img src="images/footer.png" alt="">
+        <img src="images/rodape.jpg" alt="">
       </footer>
 
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

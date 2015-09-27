@@ -42,7 +42,7 @@
 
       <div id="home" class="content" >
         <div>
-          <h1><img src="images/pin.png">olá, participante!</h1>
+          <h1><img src="images/pin.png">olá, agente de viagem</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
             Ipsam, maiores quidem, repellat ad veniam, officia dolorum
@@ -54,29 +54,52 @@
             Ipsam, maiores quidem, repellat ad veniam, officia dolorum
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Ipsam, maiores quidem, repellat ad veniam, officia dolorum
+            qui similique alias inventore cupiditate ullam illum labore
+            doloremque dolores accusantium veritatis ducimus quaerat.
+          </p>
 
           <img src="images/img-home.jpg" id="img-home" class="img-responsive" alt="">
         </div>
-        <div>
+        <div class="form-split">
           <h1>cadastre seu bilhete</h1>
           <div id="form">
             <form action="" method="post">
-              <label for="eticket">Eticket Airfrance / KLM</label>
-              <input type="text" name="eticket" id="eticket" placeholder="e.g. 0741234567890">
+              <label for="eticket">E-ticket </label>&nbsp;<label for="airfrance">Air France / KLM <a href="#"><img src="images/ico-question.png" ></a> </label><br>
+              <input type="text" name="eticket" id="eticket" placeholder="123" style="width:56px; margin-right: 4px">
+              <input type="text" name="airfrance" id="airfrance" placeholder="4567890833">
+              <br>
+              <label for="">Ou</label>
+              </br>
 
-              <label for="code">Ou <br> Código de Reserva GOL</label>
-              <input type="text" name="code" id="code" placeholder="e.g. 0741234567890">
+              <label for="codeGol"> Localizador GOL &nbsp;<a href="#"><img src="images/ico-question.png" ></a> </label> <br>
+              <input type="text" name="codeGol" id="codeGol" placeholder="A23D3B"><br>
 
-              <label for="class">Classe Viagem Internacional</label>
-              <select>
-                <option value="#">Option 1</option>
-              </select>
-
-              <label for="origin">Origem do voo</label>
-              <input type="text" name="origin" id="origin">
-
-              <label for="origin">Data emissão</label>
+              <label for="date" style="margin-right: 85px;">Data emissão&nbsp;<a href="#"><img src="images/ico-question.png" ></a> </label>
+              <label for="pax">Data Pax&nbsp;<a href="#"><img src="images/ico-question.png" ></a> </label> <br>
               <input type="text" name="date" id="date">
+              <input type="text" name="pax" id="pax">
+
+              <br>
+              <label for="origin">Origem do Voo&nbsp;<a href="#"><img src="images/ico-question.png" ></a></label><br>
+              <select name="origin" id="">
+                <option value="0">GRU - Guarulhos</option>
+                <option value="1">CNH - Congonhas</option>
+              </select>
+              <br>
+              <label for="class">Classe Viagem Internacional &nbsp;<a href="#"><img src="images/ico-question.png" ></a></label><br>
+              <select name="class" id="">
+                <option value="0">Classe Viagem I</option>
+                <option value="1">Classe Viagem II</option>
+              </select>
+              <br>
+
+              <label for="dateRet"> Data do Retorno &nbsp;<a href="#"><img src="images/ico-question.png" ></a> </label> <br>
+              <input type="text" name="dateRet" id="dateRet"><br>
+
+
               <small>Só serão válidos bilhetes até o dia xx/xx/xxxx</small>
 
               <button type="submit">Cadastrar</button>
@@ -85,7 +108,7 @@
         </div>
       </div>
       <footer>
-        <img src="images/rodape.jpg" alt="">
+        <img src="images/footer.png" alt="">
       </footer>
 
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

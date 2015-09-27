@@ -26,8 +26,8 @@
 }
 
 body{
-  background-color: @cyan;
   padding-top:30px;
+  color:@black;
 
   h1, h2, h3{
     color: @orange;
@@ -99,12 +99,52 @@ header{
 .content{
   padding: 10px 40px;
   position: relative;
+  background: url(../images/background.jpg);
+  .background-cover;
 
   .img-90{
     width: 90% !important;
     .border-on-image
   }
 
+  .form-split{
+    padding: 0 30px;
+    h1{
+      padding: 10px;
+      font-size: 40pt;
+      color:white;
+      margin-bottom: 10px;
+      text-align: center;
+      background-color: @orange;
+      -webkit-border-top-left-radius: 5px;
+      -webkit-border-top-right-radius: 5px;
+      -moz-border-radius-topleft: 5px;
+      -moz-border-radius-topright: 5px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+    div{
+      padding:30px;
+      background-color: @orange;
+      color:white;
+      .heading-font(12pt);
+      input, select{
+        border: 0;
+        height: 40px;
+        padding:2px 5px;
+        color: #555;
+      }
+      button{
+        display: block;
+        .border-radius(5px);
+        border: 4px white solid;
+        background-color: @orange;
+        .heading-font(1.5em);
+        padding: 5px 10px;
+        margin: 30px auto 0px
+      }
+    }
+  }
 
   &#home{
 
@@ -123,46 +163,13 @@ header{
       margin-left: -325px;
       left: 75%;
 
-      h1{
-        padding: 10px;
-        font-size: 40pt;
-        color:white;
-        margin-bottom: 10px;
-        text-align: center;
-        background-color: @orange;
-        -webkit-border-top-left-radius: 5px;
-        -webkit-border-top-right-radius: 5px;
-        -moz-border-radius-topleft: 5px;
-        -moz-border-radius-topright: 5px;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
-      }
-
       #form{
-        padding:30px;
-        background-color: @orange;
-        color:white;
-        .heading-font(12pt);
         input, select{
           border: 0;
-          display: block;
-          clear: both;
-          width: 378px;
           height: 40px;
           padding:2px 5px;
           color: #555;
         }
-
-        button{
-          display: block;
-          .border-radius(5px);
-          border: 4px white solid;
-          background-color: @orange;
-          .heading-font(1.5em);
-          padding: 5px 10px;
-          margin: 30px auto 0px
-        }
-
         label{
           line-height: 30px
         }
