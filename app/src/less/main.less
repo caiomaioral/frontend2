@@ -26,7 +26,6 @@
 }
 
 body{
-  padding-top:30px;
   color:@black;
 
   h1, h2, h3{
@@ -41,6 +40,11 @@ body{
     .heading-font(14pt);
     border: 0;
     color: white;
+  }
+  table{
+    th,td{
+      padding: 5px;
+    }
   }
 }
 
@@ -178,7 +182,6 @@ header{
   }
 
   &#contact{
-
     &>div{
       width: 70%;
       margin-top: 80px !important;
@@ -194,142 +197,171 @@ header{
           width: 100%;
           padding:2px 5px;
           color: #555;
-        }
       }
-      label{
-        line-height: 30px;
-      }
+    }
+    label{
+      line-height: 30px;
+    }
 
-      button{
+    button{
+      background-color: @orange;
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+    }
+    small{
+      color: #CCC;
+      float: right;
+    }
+  }
+
+  &#awards, &#howtowork{
+    table{
+      margin: 0 auto;
+      min-width: 500px;
+      font-weight: bold;
+      text-align: center;
+      color: @orange;
+
+      border: 1px @orange solid;
+      border-collapse: collapse;
+
+      thead{
         background-color: @orange;
-        display: block;
-        margin: 20px auto;
+        color: white;
+
+        tr {
+          text-align: center;
+          vertical-align: middle;
+
+          td:first-child{
+            background-color: white;
+            color: @orange;
+          }
+          td:not(:first-child) {
+            border-right:1px solid white;
+            border-top:1px solid white;
+            height: 90px;
+
+          }
+        }
+      }
+
+      tbody > tr {
+
+        td{
+          border: 1px @orange solid;
+          &:first-child{
+            text-align: right;
+            background-color: @orange;
+            color: white;
+            border-top: 2px white solid
+          }
+        }
+      }
+
+    }
+  }
+
+  &#howtowork{
+    img.img-responsive{
+      border:20px @orange solid;
+    }
+  }
+
+  &#ticket{
+    .row{
+      padding: 30px;
+      div{
+        display: table-cell;
+        vertical-align: top;
+        margin: 0 10px;
         padding: 10px 20px;
-      }
-      small{
-        color: #CCC;
-        float: right;
-      }
-    }
-
-    &#awards, &#howtowork{
-      table{
-        margin: 0 auto;
-        min-width: 500px;
-        font-weight: bold;
-        text-align: center;
-        color: @orange;
-
-        thead > tr > th,
-        tbody > tr > td{
-          padding: 5px;
-        }
-
-        border: 1px @orange solid;
-        border-collapse: collapse;
-
-        thead{
-          background-color: @orange;
-          color: white;
-
-          tr {
-            text-align: center;
-            vertical-align: middle;
-
-            td:first-child{
-              background-color: white;
-              color: @orange;
-            }
-            td:not(:first-child) {
-              border-right:1px solid white;
-              border-top:1px solid white;
-              height: 90px;
-
-            }
-          }
-        }
-
-        tbody > tr {
-
-          td{
-            border: 1px @orange solid;
-            &:first-child{
-              text-align: right;
-              background-color: @orange;
-              color: white;
-              border-top: 2px white solid            
-            }
-          }
-        }
-
-      }
-    }
-
-    &#howtowork{
-      img.img-responsive{
-        border:20px @orange solid;
-      }
-    }
-
-    &#ticket{
-      .row{
-        padding: 30px;
-        div{
-          display: table-cell;
+        &:nth-child(odd){
+          width: 48%;
+          text-align:justify;
           vertical-align: top;
-          margin: 0 10px;
-          padding: 10px 20px;
-          &:nth-child(odd){
-            width: 48%;
-            text-align:justify;
-            vertical-align: top;
-          }
-          &:not(.col){
-            padding: 30px 60px;
-
-          }
         }
-      }
-      .form-split{
-        width: 70%;
-        margin: 0 auto;
-      }
-    }
+        &:not(.col){
+          padding: 30px 60px;
 
-    &#faq{
-      dl.accordion{
-      	counter-reset: x-counter;
-
-        a{
-          &:link,
-          &:hover,
-          &:visited,
-          &:active{
-            color: @black;
-            font-weight: bold;
-          }
-
-        }
-
-        dt{
-          margin: 10px;
-          &:before{
-            margin: 10px;
-            color: @black;
-            font-weight: bold;
-          	content: counter(x-counter) "." ;
-          	counter-increment: x-counter;
-          }
-        }
-        dd{
-          padding:20px;
-          margin: 10px;
-          border:1px @orange solid;
-          .border-radius(5px);
         }
       }
     }
+    table{
+      width: 100%;
+      text-align: left;
+      thead{
+        tr > th{
+          padding-bottom: 5px;
+        }
+      }
+      tbody{
+        background-color: white;
+        tr{
+          td{
+            border: 2px @orange solid;
+            color:@orange;
+            height: 34px;
+            min-height: 34px;
+          }
+        }
+      }
+      tfoot{
+        td:first-child{
+          text-align: right;
+          text-transform:uppercase;
+          font-size: 16pt;
+        }
+        td:nth-child(2){
+          border: 2px @orange solid;
+          color:@orange;
+          background-color: white;
+          text-align:left;
+          height: 34px;
+          min-height: 34px;
+        }
+      }
+    }
+    .form-split{
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
 
+  &#faq{
+    dl.accordion{
+    	counter-reset: x-counter;
+
+      a{
+        &:link,
+        &:hover,
+        &:visited,
+        &:active{
+          color: @black;
+          font-weight: bold;
+        }
+
+      }
+
+      dt{
+        margin: 10px;
+        &:before{
+          margin: 10px;
+          color: @black;
+          font-weight: bold;
+        	content: counter(x-counter) "." ;
+        	counter-increment: x-counter;
+        }
+      }
+      dd{
+        padding:20px;
+        margin: 10px;
+        border:1px @orange solid;
+        .border-radius(5px);
+      }
+    }
+  }
 }
 
 footer{
