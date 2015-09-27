@@ -213,43 +213,55 @@ header{
     }
 
     &#awards, &#howtowork{
-      table + table { margin-top: 50px;}
       table{
         margin: 0 auto;
-        background-color: white;
         min-width: 500px;
+        font-weight: bold;
+        text-align: center;
+        color: @orange;
 
-        thead{
-          color: white;
-        }
         thead > tr > th,
         tbody > tr > td{
           padding: 5px;
         }
 
+        border: 1px @orange solid;
+        border-collapse: collapse;
 
-        &.orange{
-          border: 1px @orange solid;
-          border-collapse: collapse;
-          thead{
-            background-color: @orange;
-            th + th { border-left:1px solid white; }
-          }
-          tbody > tr > td{
-            border: 1px @orange solid
-          }
-        }
-        &.blue{
-          border: 1px @blue solid;
-          border-collapse: collapse;
-          thead{
-            background-color: @blue;
-            th + th { border-left:1px solid white; }
-          }
-          tbody > tr > td{
-            border: 1px @blue solid
+        thead{
+          background-color: @orange;
+          color: white;
+
+          tr {
+            text-align: center;
+            vertical-align: middle;
+
+            td:first-child{
+              background-color: white;
+              color: @orange;
+            }
+            td:not(:first-child) {
+              border-right:1px solid white;
+              border-top:1px solid white;
+              height: 90px;
+
+            }
           }
         }
+
+        tbody > tr {
+
+          td{
+            border: 1px @orange solid;
+            &:first-child{
+              text-align: right;
+              background-color: @orange;
+              color: white;
+              border-top: 2px white solid            
+            }
+          }
+        }
+
       }
     }
 
