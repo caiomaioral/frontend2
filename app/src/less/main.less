@@ -284,6 +284,40 @@ header{
       }
     }
 
+    &#faq{
+      dl.accordion{
+      	counter-reset: x-counter;
+
+        a{
+          &:link,
+          &:hover,
+          &:visited,
+          &:active{
+            color: @black;
+            font-weight: bold;
+          }
+
+        }
+
+        dt{
+          margin: 10px;
+          &:before{
+            margin: 10px;
+            color: @black;
+            font-weight: bold;
+          	content: counter(x-counter) "." ;
+          	counter-increment: x-counter;
+          }
+        }
+        dd{
+          padding:20px;
+          margin: 10px;
+          border:1px @orange solid;
+          .border-radius(5px);
+        }
+      }
+    }
+
 }
 
 footer{

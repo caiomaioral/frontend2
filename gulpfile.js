@@ -37,7 +37,7 @@ gulp.task('less', function(){
 
 // Task que verifica erros, compila e minifica o JavaScript
 gulp.task('javascript', function(){
-  gulp.src('app/js/*.js')
+  gulp.src('app/src/js/*.js')
   .pipe(sourcemaps.init())
     .pipe(uglify({
       mangle: false
