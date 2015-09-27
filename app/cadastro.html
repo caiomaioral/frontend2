@@ -40,39 +40,60 @@
         </nav>
       </header>
 
-      <div class="content" id="joinUs">
+      <div class="content" id="ticket">
         <div class="form-split">
           <h1>cadastre seu bilhete</h1>
-          <div>
-            <form action="" method="post">
-              <label for="eticket">Eticket Airfrance / KLM</label>
-              <input type="text" name="eticket" id="eticket" placeholder="e.g. 0741234567890">
+          <form action="" method="post">
 
-              <label for="code">Ou <br> Código de Reserva GOL</label>
-              <input type="text" name="code" id="code" placeholder="e.g. 0741234567890">
+          <div class="row" >
+            <div class="col">
+              <label for="eticket">E-ticket </label>&nbsp;<label for="airfrance">Air France / KLM <a href="#"><img src="images/ico-question.png" ></a> </label><br>
+              <input type="text" name="eticket" id="eticket" placeholder="123" style="width:56px;">
+              <input type="text" name="airfrance" id="airfrance" placeholder="4567890833">
+              <br><br>
 
-              <label for="class">Classe Viagem Internacional</label>
-              <select>
-                <option value="#">Option 1</option>
-              </select>
-
-              <label for="origin">Origem do voo</label>
-              <input type="text" name="origin" id="origin">
-
-              <label for="origin">Data emissão</label>
+              <label for="date" style="margin-right: 85px;">Data emissão&nbsp;<a href="#"><img src="images/ico-question.png" ></a> </label> <br>
               <input type="text" name="date" id="date">
+              <br><br>
+
+              <label for="origin">Origem do Voo&nbsp;<a href="#"><img src="images/ico-question.png" ></a></label><br>
+              <select name="origin" id="">
+                <option value="0">GRU - Guarulhos</option>
+                <option value="1">CNH - Congonhas</option>
+              </select>
+              <br><br>
+
+              <label for="dateRet"> Data do Retorno &nbsp;<a href="#"><img src="images/ico-question.png" ></a> </label> <br>
+              <input type="text" name="dateRet" id="dateRet"><br>
               <small>Só serão válidos bilhetes até o dia xx/xx/xxxx</small>
 
-              <button type="submit">Cadastrar</button>
-            </form>
-          </div>
-        </div>
+            </div>
+            <div><span>Ou</span></div>
+            <div class="col">
+              <label for="codeGol"> Localizador GOL &nbsp;<a href="#"><img src="images/ico-question.png" ></a> </label> <br>
+              <input type="text" name="codeGol" id="codeGol" placeholder="A23D3B">
+              <br><br>
 
+              <label for="pax">N&ordm; de Pax &nbsp;<a href="#"><img src="images/ico-question.png" ></a> </label><br>
+              <input type="text" name="pax" id="pax">
+              <br><br>
+
+              <label for="class">Classe Viagem Internacional &nbsp;<a href="#"><img src="images/ico-question.png" ></a></label><br>
+              <select name="class" id="">
+                <option value="0">Classe Viagem I</option>
+                <option value="1">Classe Viagem II</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <button type="submit">Cadastrar</button>
+          </div>
+          </form>
+        </div>
       </div>
 
-
       <footer>
-        <img src="images/rodape.jpg" alt="">
+        <img src="images/footer.png" alt="">
       </footer>
 
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

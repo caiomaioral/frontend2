@@ -291,8 +291,33 @@ header{
           font-weight: bold;
         }
       }
-
     }
+
+    &#ticket{
+      .row{
+        padding: 30px;
+        div{
+          display: table-cell;
+          vertical-align: top;
+          margin: 0 10px;
+          padding: 10px 20px;
+          &:nth-child(odd){
+            width: 48%;
+            text-align:justify;
+            vertical-align: top;
+          }
+          &:not(.col){
+            padding: 30px 60px;
+
+          }
+        }
+      }
+      .form-split{
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+
 }
 
 footer{
