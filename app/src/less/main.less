@@ -27,7 +27,11 @@
 
 body{
   color:@black;
-
+  background: url(../images/background.jpg);
+  .background-cover;
+  hr{
+    border: 2px @orange solid;
+  }
   h1, h2, h3{
     color: @orange;
     .heading-font;
@@ -48,7 +52,7 @@ body{
   }
 }
 
-header{
+header:not(.joinUs){
   overflow: auto;
   height:376px;
   background: url(../images/header.jpg) no-repeat;
@@ -99,12 +103,35 @@ header{
     }
   }
 }
+header.joinUs{
+  background-color: white;
+  img{
+    margin:0 auto;
+  }
+
+  div{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &::after{
+    content: '';
+    height: 83px;
+    width: 100%;
+    background: url(../images/header-join.png) no-repeat @orange;
+    display: block;
+    .background-cover
+
+  }
+}
+
 
 .content{
   padding: 10px 40px;
   position: relative;
-  background: url(../images/background.jpg);
-  .background-cover;
+  &:not(.joinUs){
+
+  }
 
   .img-90{
     width: 90% !important;
@@ -363,7 +390,7 @@ header{
     }
   }
 
-  &#account{
+  &#account, &.joinUs {
     display: block;
 
     section{
@@ -463,9 +490,53 @@ header{
       }
     }
   }
+  &.joinUs{
+    color: white;
+    padding: 50px 100px;
+    hr{
+      border-color: white;
+      margin: 20px 0;
+    }
+
+    section{
+      padding: 10px;
+      background-color: white;
+      .border-radius(5px);
+      h3{
+        margin: 10px 0 40px 0;
+      }
+      hr{
+        border: 1px @orange solid;
+        width: 80%;
+      }
+      .row{
+        &>div:not(.col){
+          text-align: center;
+        }
+      }
+    }
+    #check{
+      margin: 50px auto;
+      display: block;
+      text-align: center;
+      font-weight: bold;
+      width: 520px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px;
+      color: @orange;
+    }
+    button{
+      .make-button;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+  &.joinUs , &.joinUs + footer{
+    background-color: @orange;
+  }
 
 }
-
 footer{
   img{
     width: 100%;

@@ -11,55 +11,181 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/application.min.css">
-        <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+      <!--[if lt IE 8]>
+          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
 
-        <!-- Add your site or application content here -->
-    	<div id="content">
-            <div id="base-login">
+      <header class="joinUs">
+        <img src="images/top-login.png" class="img-responsive" alt="">
+        <div>
+          <h1><img src="images/pin.png">Cadastro</h1>
+          <hr>
+        </div>
+      </header>
 
-                <div id="header">
-                  <img src="images/top-login.png" width="1100" height="613">
+      <div class="content joinUs account" >
+        <form action="#" method="post">
+          <h4>* excluíndo consolidadoras e Agências Online</h4>
+          <section>
+            <div class="row">
+              <div>
+                <h3>DADOS PESSOAIS</h3>
+              </div>
+            </div>
+            <div class="row" >
+              <div class="col">
+                <div>
+                  <label for="name">Nome</label>
+                  <input type="text" name="name" id="name" >
+                </div>
+                <div>
+                  <label for="cpf">CPF</label>
+                  <input type="text" name="cpf" id="cpf" >
                 </div>
 
-                <div id="faixa">
-
-                    <div id="titulo"><img src="images/tit-cliente-login.png" width="1100" height="291"></div>
-
-                    <div id="container-login">
-                        <div class="esquerda">
-                            <div class="registro_esquerda">
-                                <input name="Login" type="text" value="" placeholder="CPF">
-                                <input name="Senha" type="password" placeholder="SENHA">
-                            </div>
-                            <div class="registro_direita">
-                                <input name="registrar" type="button" value="Entrar" class="Entrar button">
-                            </div>
-                        </div>
-
-                      <ul>
-                            <li>ESQUECEU SUA SENHA: <a href="#">CLIQUE AQUI</a></li>
-                            <li><a href="mailto:contato@conexao.com.br">CONTATO@CONEXAO.COM.BR</a></li>
-                        </ul>
-                    </div>
-
-                  	<div class="registro">
-                        <label>AINDA NÃO É CADASTRADO?</label>
-                        <input name="registro" type="button" value="CADASTRA-SE" class="registro button">
-                    </div>
+                <div>
+                  <label for="email">E-mail Pessoal</label>
+                  <input type="email" name="email" id="email">
                 </div>
+              </div>
+              <div class="col">
+                <div>
+                  <label for="born">Data Nascimento</label>
+                  <input type="text" name="born" id="born">
+                </div>
+
+                <div>
+                  <label for="celphone">Tel. Celular</label>
+                  <input type="text" name="cellphone" id="cellphone">
+                </div>
+
+                <div>
+                  <label for="wk-email">E-mail Comercial</label>
+                  <input type="email" name="wk-email" id="wk-email">
+                </div>
+
+              </div>
+            </div>
+            <br><br>
+            <hr>
+            <div class="row">
+              <div>
+                <h3>DADOS COMERCIAIS</h3>
+              </div>
             </div>
 
-            <div id="rodape">
-                <img src="images/rodape-login.jpg" width="530" height="85">
+            <div class="row">
+              <div class="col">
+                <div>
+                  <label for="agency">Agência</label>
+                  <input type="text" name="agency" id="agency">
+                </div>
+
+                <div>
+                  <label for="wk-zipcode">Cep. Comercial</label>
+                  <input type="text" name="wk-zipcode" id="wk-zipcode">
+                </div>
+              </div>
+              <div class="col">
+                <div>
+                  <label for="cnpj">CNPJ</label>
+                  <input type="text" name="cnpj" id="cnpj">
+                </div>
+                <div>
+                  <label for="wk-phone">Tel. Comercial</label>
+                  <input type="text" name="wk-phone" id="wk-phone">
+                </div>
+              </div>
             </div>
-    	</div>
+            <div class="row full">
+              <div class="col">
+                <div>
+                  <label for="wk-address">End. Comercial</label>
+                  <input type="text" id="wk-address" name="wk-address">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div>
+                  <label for="number">Número</label>
+                  <input type="text" name="number" id="number">
+                </div>
+                <div>
+                  <label for="city">Cidade</label>
+                  <input type="text" name="city" id="city">
+                </div>
+              </div>
+              <div class="col">
+                <div>
+                  <label for="complement">Complemento</label>
+                  <input type="text" name="complement" id="complement">
+                </div>
+                <div>
+                  <label for="state">UF</label>
+                  <input type="text" name="state" id="state">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div>
+                  <label for="pass">Cadastrar Senha</label>
+                  <input type="password" name="pass" id="pass">
+                </div>
+                <div>
+                  <label for="re-pass">Confirmar Senha</label>
+                  <input type="text" name="re-pass" id="re-pass">
+                </div>
+              </div>
+            </div>
+          </section>
+          <hr>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Nesciunt cumque, eius vel voluptate eum saepe sequi pariatur
+            dolorem repellat, earum adipisci, exercitationem reiciendis impedit
+            inventore consequuntur provident placeat vitae. Totam.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id,
+            unde minima odio quod accusamus sed, est tempora mollitia explicabo,
+            asperiores esse. Cum voluptatum dolore corporis amet quas
+            labore, dicta cupiditate.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Tempore reiciendis praesentium, impedit cumque. Aliquam eligendi
+            ullam quidem, voluptatibus necessitatibus, ipsa ab, sapiente
+            molestiae veritatis et hic officia eius ipsum laudantium.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Ea veniam eveniet recusandae dolorem provident atque voluptates
+            similique, sit nemo vitae, libero voluptas voluptatum nam officiis
+            eum ullam ipsa est, culpa.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Nesciunt cumque, eius vel voluptate eum saepe sequi pariatur
+            dolorem repellat, earum adipisci, exercitationem reiciendis impedit
+            inventore consequuntur provident placeat vitae. Totam.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id,
+            unde minima odio quod accusamus sed, est tempora mollitia explicabo,
+            asperiores esse. Cum voluptatum dolore corporis amet quas
+            labore, dicta cupiditate.
+          </p>
+          <div id="check">
+            <input type="checkbox" name="accept" id="accept" value="">
+            <label for="accept">LI E ACEITO OS TERMOS DO REGULAMENTO DA CAMPANHA</label>
+          </div>
+
+          <button type="submit">CADASTRAR</button>
+
+          </form>
+      </div>
+      <footer>
+        <img src="images/footer.png" alt="">
+      </footer>
 
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
