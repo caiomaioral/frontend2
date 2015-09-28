@@ -362,6 +362,108 @@ header{
       }
     }
   }
+
+  &#account{
+    display: block;
+
+    section{
+      background-color: @orange;
+      padding: 100px;
+
+      aside{
+        text-align: center;
+        color: white;
+        padding-top: 50px;
+        h3{
+          display: inline;
+          color: white;
+        }
+        p{
+          padding: 20px;
+          a{
+            color: white;
+            text-decoration: underline;
+            font-weight: bold;
+          }
+        }
+        button{
+          .make-button;
+          margin:20px;
+          padding: 10px 40px;
+        }
+        input[type="file"]{
+          color: transparent;
+          &::-webkit-file-upload-button {
+            visibility: hidden;
+          }
+
+          &::after {
+            content: 'Upload';
+            margin-left: 40px;
+            display: block;
+            .make-button;
+          }
+          &:active {
+            outline: 0;
+          }
+          &:active::before {
+            background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+          }
+
+        }
+
+      }
+    }
+
+    .row{
+      background-color: white;
+      padding: 0 80px 0 60px;
+      &:first-child{
+        padding-top: 60px;
+      }
+      &:last-of-type{
+        padding-bottom: 60px;
+      }
+      .col{
+        text-align: right;
+        div{
+
+          margin: 10px;
+          label,input{
+            display: inline-block;
+            margin-left: 5px;
+          }
+        }
+      }
+      &.full{
+        padding:0 80px 0 0 !important;
+        .col{
+          width: 100%;
+          div{
+            padding-left: 70px;
+            input{
+              width: 80%;
+            }
+          }
+        }
+      }
+
+      label{
+        color: @orange;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      input{
+        display: block;
+        clear:right;
+        min-width: 60%;
+        background-color: @cyan;
+        border:0;
+        padding: 5px;
+      }
+    }
+  }
+
 }
 
 footer{
