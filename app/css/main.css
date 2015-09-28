@@ -92,19 +92,36 @@ textarea {
 /* ==========================================================================
    Inicio dos styles
    ========================================================================== */
-@font-face {
-	font-family: oswald;
-	src: url(../fonts/Oswald-Bold.ttf);
-	font-weight: bold;
-}
+   @font-face {
+     font-family: 'Frutiger';
+     src: url('../fonts/FrutigerLTStd-Bold.eot');
+     src: url('../fonts/FrutigerLTStd-Bold.eot#iefix') format('embedded-opentype'),
+     url('../fonts/FrutigerLTStd-Bold.ttf') format('truetype');
+     font-weight: bold;
+     font-style: normal;
+   }
 
+   @font-face {
+     font-family: 'Frutiger';
+     src: url('../fonts/FrutigerLTStd-Roman.eot');
+     src: url('../fonts/FrutigerLTStd-Roman.eot#iefix') format('embedded-opentype'),
+     url('../fonts/FrutigerLTStd-Roman.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+   }
+
+   @font-face {
+       font-family: Frutiger;
+       src: url(../fonts/FrutigerLTStd-Roman.ttf);
+       font-weight: normal;
+   }
 html, body { height: 100%; }
 
 body {
 	background: #fff;
 	background: url(../images/faixa.png) no-repeat center;
 	background-position: right 600px;
-	font-family: oswald, 'Tahoma';
+	font-family: Frutiger, 'Tahoma';
 }
 
 a:link,
