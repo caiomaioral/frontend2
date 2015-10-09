@@ -53,6 +53,12 @@ body{
   }
 }
 
+header:not(.joinUs),
+.content{
+  min-width: @min-width;
+  width: 100%;
+}
+
 header:not(.joinUs){
   overflow: auto;
   height:376px;
@@ -61,7 +67,8 @@ header:not(.joinUs){
   .heading-font;
 
   #logo{
-    float:left
+    float:left;
+    position: absolute;
   }
 
   nav{
@@ -79,14 +86,15 @@ header:not(.joinUs){
         }
       }
     }
-    &:first-child{
+    &:first-of-type{
       ul > li{
         display: inline-block;
       }
     }
-    &:last-child{
+    &:last-of-type{
       text-transform: uppercase;
       font-size: 1.1vw;
+      text-align: right;
 
       ul{
         margin-top: 70px;
