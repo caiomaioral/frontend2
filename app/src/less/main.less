@@ -299,8 +299,26 @@ header.joinUs{
   }
 
   &#howtowork{
-    img.img-responsive{
+    .image{
       border:20px @orange solid;
+      background-color: white;
+      text-align: center;
+      color:white;
+
+      img{
+        .img-responsive();
+        width: 100%;
+      }
+      p{
+        width: 80%;
+        font-weight: bold;
+        padding: 30px 90px;
+        margin: 0 auto 50px;
+        font-size: 1.9vw;
+        display: block;
+        background-color: @orange;
+
+      }
     }
   }
 
